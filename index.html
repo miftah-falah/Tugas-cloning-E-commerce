@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Carousell Clone</title>
+    <link rel="icon" href="img/carousell-logo-icon.png" type="img/png" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="notification" id="notif">
+        <div class="notification-text">
+          ☀️ Tema yang cocok dengan pengaturan sistem Anda telah ditetapkan.
+          Namun, ini dapat diganti ke mode terang atau gelap menggunakan pemilih
+          di bagian bawah halaman!
+        </div>
+        <button
+          class="close-button"
+          onclick="document.getElementById('notif').style.display='none'"
+        >
+          &times;
+        </button>
+      </div>
+
+      <nav class="navbar">
+        <!-- Logo Brand -->
+        <div>
+          <img src="img/carousell-logo.svg" alt="Carousell logo" />
+        </div>
+
+        <!-- Left Navbar -->
+        <div class="nav-left">
+          <a href="#">Elektronik</a>
+          <a href="#">Feysen</a>
+          <a href="#">Anak-anak</a>
+          <a href="#">Perawatan Pribadi</a>
+          <div class="text-icon-wrapper">
+            <i class="icon" data-feather="grid"></i>
+            <span calss="text">Semua Kategori</span>
+          </div>
+        </div>
+
+        <!-- Right Navbar -->
+        <div class="nav-right">
+          <a href="#">Daftar</a>
+          <a href="#">Masuk</a>
+          <button class="jual-btn">Jual</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Searce Bar -->
+    <div class="search-bar">
+      <input type="search" placeholder="Cari produk" />
+      <button>Cari</button>
+    </div>
+
+    <div class="banner" id="banner">
+      <img src="img/benner1.png" alt="Preloved Market" />
+      <img src="img/benner2.jpeg" alt="Upgrade HP" />
+      <img src="img/benner3.png" alt="Tampil Modis" />
+      <img src="img/benner4.png" alt="Sneakers Sporty" />
+      <img src="img/benner5.png" alt="Mainan" />
+    </div>
+
+    <!-- Categories -->
+    <section class="categories">
+      <h2>Jelajahi Carousell</h2>
+      <div class="items">
+        <div class="category">
+          <img src="img/mengikuti.png" alt="Megikuti" />
+          <p>Following</p>
+        </div>
+        <div class="category">
+          <img src="img/fesyen-wanita.png" alt="Feyesen Wanita" />
+          <p>Fesyen Wanita</p>
+        </div>
+        <div class="category">
+          <img src="img/fesyen pria.png" alt="Fesyen Pria" />
+          <p>Fesyen Pria</p>
+        </div>
+        <div class="category">
+          <img
+            src="img/kesehatan-&-kecantikan.png"
+            alt="Kehatan & Kecantikan"
+          />
+          <p>Kesehatan & Kecantikan</p>
+        </div>
+        <div class="category">
+          <img src="img/electronik.png" alt="Elektronik" />
+          <p>Elektronik</p>
+        </div>
+        <div class="category">
+          <img src="img/telephon-seluler-dan-tablet.png" alt="" />
+          <p>Telephone Seluler & Tablet</p>
+        </div>
+        <div class="category">
+          <img src="img/buku-&-alat-tulis.png" alt="Buku & Alat Tulis" />
+          <p>Buku & Alat Tulis</p>
+        </div>
+        <div class="category">
+          <img src="img/bayi-&-anak.png" alt="Bayi & Anak" />
+          <p>Bayi & Anak</p>
+        </div>
+        <div class="category">
+          <img src="img/olshop-fashion.png" alt="Olshop Fashion" />
+          <p>Olshop Fashion</p>
+        </div>
+        <div class="category">
+          <img src="img/barang-mewah.png" alt="Barang Mewah" />
+          <p>Barang Mewah</p>
+        </div>
+        <div class="category">
+          <img src="img/fotografi.png" alt="Fotografi" />
+          <p>Fotografi</p>
+        </div>
+        <div class="category">
+          <img src="img/video-games.png" alt="Video Game" />
+          <p>Video Game</p>
+        </div>
+        <div class="category">
+          <img src="img/makan-&-minuman.png" alt="Makan & Minum" />
+          <p>Makan & Minum</p>
+        </div>
+        <div class="category">
+          <img
+            src="img/desain-&-kerajinan-tangan.png"
+            alt="Desain & Kerajinan Tangan"
+          />
+          <p>Desain & Kerajinan Tangan</p>
+        </div>
+        <div class="category">
+          <img src="img/olah-raga.png" alt="Olah Raga" />
+          <p>Olah Raga</p>
+        </div>
+        <div class="category">
+          <img src="img/toys-&-collectibles.png" alt="Toys & Collectibles" />
+          <p>Toys & Collectibles</p>
+        </div>
+        <div class="category">
+          <img src="img/antik.png" alt="Antik" />
+          <p>Antik</p>
+        </div>
+        <div class="category">
+          <img src="img/music-&-media.png" alt="Musik & media" />
+          <p>Musik & media</p>
+        </div>
+        <div class="category">
+          <img src="img/motor.png" alt="Motor" />
+          <p>Motor</p>
+        </div>
+        <div class="category">
+          <img src="img/mobil-&-motor.png" alt="Mobil & Motor" />
+          <p>Mobil & Motor</p>
+        </div>
+        <div class="category">
+          <img src="img/aksesoris-&-mobil.png" alt="Aksesoris Mobil" />
+          <p>Aksesoris Mobil</p>
+        </div>
+        <div class="category">
+          <img src="img/properti.png" alt="Properti" />
+          <p>Properti</p>
+        </div>
+        <div class="category">
+          <img src="img/jasa.png" alt="Jasa" />
+          <p>Jasa</p>
+        </div>
+        <div class="category">
+          <img src="img/pekerjaan.png" alt="Pekerjaan" />
+          <p>Pekerjaan</p>
+        </div>
+        <div class="category">
+          <img src="img/perabotan-rumah.png" alt="Perabotan Rumah" />
+          <p>Perabotan rumah</p>
+        </div>
+        <div class="category">
+          <img src="img/perkebunan.png" alt="Perkebunan" />
+          <p>Perkebunan</p>
+        </div>
+        <div class="category">
+          <img src="img/kitchen_appliances.png" alt="Kitchen & Appliances" />
+          <p>Kitchen & Appliances</p>
+        </div>
+        <div class="category">
+          <img src="img/perlengkapan-hewan.png" alt="Perlengkapan Hewan" />
+          <p>Perlengkapan Hewan</p>
+        </div>
+        <div class="category">
+          <img src="img/j-pop.png" alt="J-Pop" />
+          <p>J-Pop</p>
+        </div>
+        <div class="category">
+          <img src="img/k-wave.png" alt="K-Wave" />
+          <p>K-Wave</p>
+        </div>
+        <div class="category">
+          <img src="img/tiket-&-voucher.png" alt="Tiket & Voucher" />
+          <p>Tiket & Voucher</p>
+        </div>
+        <div class="category">
+          <img src="img/komunitas.png" alt="Komunitas" />
+          <p>Komunitas</p>
+        </div>
+        <div class="category">
+          <img src="img/barang-yang-dicari.png" alt="Barang Yang Dicari" />
+          <p>Barang Yang Dicari</p>
+        </div>
+        <div class="category">
+          <img src="img/serba-serbi.png" alt="Serba Serbi" />
+          <p>Serba Serbi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation -->
+    <h2>Rekomendasi Untuk Anda</h2>
+
+    <div class="container">
+      <div class="card">
+        <img src="img/card1.jpg" alt="Product" />
+        <h4>Air Jordan Men's</h4>
+        <p>Rp 1,000,000</p>
+        <p>Tidak teralu ssering digunakan</p>
+      </div>
+      <div class="card">
+        <img src="img/card2.jpg" alt="Product" />
+        <h4>Nike AirZoom</h4>
+        <p>Rp 400,000</p>
+        <p>size: EU 41 / UK 7 / US 8</p>
+      </div>
+      <div class="card">
+        <img src="img/card3.jpg" alt="Product" />
+        <h4>[NEW] OPPO RENO13F 5G 12/256 PURPLE | SEGEL PABRIK 100%</h4>
+        <p>Rp 5,400,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card4.jpg" alt="Product" />
+        <h4>iPhone 15 PRO</h4>
+        <p>Rp 14,500,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card5.jpg" alt="Product" />
+        <h4>Heels hitam mewah</h4>
+        <p>Rp 100,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card6.jpg" alt="Product" />
+        <h4>Venivior Oslo Heels</h4>
+        <p>Rp 230,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card7.jpg" alt="Product" />
+        <h4>Jersey chelse origina nns essien</h4>
+        <p>Rp 700,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card8.jpg" alt="Product" />
+        <h4>NIKE X BODE ASTROGRABBER SP BLACK ORIGINAL</h4>
+        <p>Rp 4,100,000</p>
+        <p>Size: EU 41 / UK 7 / US 8</p>
+      </div>
+      <div class="card">
+        <img src="img/card9.jpg" alt="Product" />
+        <h4>Nike Alphafly Green Volt</h4>
+        <p>Rp 3,500,000</p>
+        <p>Size: EU 44 / UK 10 / US 11</p>
+      </div>
+      <div class="card">
+        <img src="img/card10.jpg" alt="Product" />
+        <h4>Promo cicilan pasti Oppp Reno 13F 8/256GB</h4>
+        <p>Rp 5,599,000</p>
+        <p>Barang baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card11.jpg" alt="Product" />
+        <h4>Oppo Reno 13F 5G 12/256 Gb (Garansi Oppo 25 Maret 2026)</h4>
+        <p>Rp 175,000</p>
+        <p>seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card12.jpg" alt="Product" />
+        <h4>iPhone 13 Pro Gold 256Gb. iBox BH 83%</h4>
+        <p>Rp 11,500,000</p>
+        <p>Tidak terlalu sering digunakan</p>
+      </div>
+      <div class="card">
+        <img src="img/card13.jpg" alt="Product" />
+        <h4>Dijual Heels Hitam VIDITI NEW</h4>
+        <p>Rp 300,000</p>
+        <p>Barang baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card14.jpeg" alt="Product" />
+        <h4>Jersey PNGC olahraga orange</h4>
+        <p>Rp 150,000</p>
+        <p>Tidak terlalu sering digunakan</p>
+      </div>
+      <div class="card">
+        <img src="img/card15.jpeg" alt="Product" />
+        <h4>
+          Sponsor CHEFOUN (Chelsea Foundation) / BLUE. Original Patch for
+          Jersey.
+        </h4>
+        <p>Rp 150,000</p>
+        <p>Tidak terlalu sering digunakan</p>
+      </div>
+      <div class="card">
+        <img src="img/card16.jpg" alt="Product" />
+        <h4>SALOMON XT-4 Advanced Night sky</h4>
+        <p>Rp 1,450,000</p>
+        <p>Size: EU 43 / UK 9 / US 10</p>
+      </div>
+      <div class="card">
+        <img src="img/card17.jpg" alt="Product" />
+        <h4>ADIDAS TERREX NOT, 2XU,SAYSKY, CIELE, ASICS, NIKE, NB</h4>
+        <p>Rp 250,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card18.jpg" alt="Product" />
+        <h4>Oppo find x8 ram 12gb/256gb</h4>
+        <p>Rp 9,500,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card19.jpg" alt="Product" />
+        <h4>Oppo a17k 3/64gb Garansi Resmi</h4>
+        <p>Rp 1,300,000</p>
+        <p>Seperti baru</p>
+      </div>
+      <div class="card">
+        <img src="img/card20.jpg" alt="Product" />
+        <h4>iphone 14 pro max 256gb garansi resmi ibox</h4>
+        <p>Rp 14,500,000</p>
+        <p>Seperti baru</p>
+      </div>
+    </div>
+
+    <a href="#" class="btn-more">Lihat Lebih Banyak</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <h2>Everyone Wins on Carousell</h2>
+        <p>
+          Unlock exclusive features when you download the Carousell app today!
+        </p>
+        <div class="app-buttons">
+          <a href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg"
+              alt="App Store"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+          /></a>
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://carousell.com"
+            alt="QR Code"
+            class="qr-code"
+          />
+        </div>
+      </div>
+
+      <div class="search-tags">
+        <p><strong>Penelusuran teratas:</strong></p>
+        <div class="tags">
+          <span>cardigan</span>
+          <span>uniqlo</span>
+          <span>iphone</span>
+          <span>kemeja</span>
+          <span>dress</span>
+          <span>zara</span>
+          <span>sepatu</span>
+          <span>tas</span>
+          <span>adidas</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Cars & Property</h4>
+          <ul>
+            <li>Mobil</li>
+            <li>Motor</li>
+            <li>Properti Dijual</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Fashion</h4>
+          <ul>
+            <li>Fesyen Pria</li>
+            <li>Jam Tangan</li>
+            <li>Tas Wanita</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Home & Living</h4>
+          <ul>
+            <li>Perabotan Rumah</li>
+            <li>Gardening</li>
+            <li>Dapur</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Electronics</h4>
+          <ul>
+            <li>Handphone</li>
+            <li>Tablet</li>
+            <li>TV</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Jobs & Services</h4>
+          <ul>
+            <li>Servis</li>
+            <li>Lowongan</li>
+            <li>Kursus</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Carousell</p>
+        <div class="selects">
+          <select>
+            <option>Bahasa Indonesia</option>
+            <option>English</option>
+          </select>
+          <select>
+            <option>Sistem</option>
+            <option>Terang</option>
+            <option>Gelap</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
