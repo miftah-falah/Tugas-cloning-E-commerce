@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/icon-192.png" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://avatars.githubusercontent.com/u/9919?s=280&v=4"
+        alt="Avatar"
+        style="
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        "
+      />
+      <h1><span id="animatedName"></span><span id="cursor">|</span></h1>
+      <p>Mahasiswa Teknik Informatika</p>
+      <button id="darkModeToggle">🌓 Mode Gelap</button>
+      <div class="wave-wrapper">
+        <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,40 C300,140 900,-60 1200,40 L1200,120 L0,120 Z"
+            fill="#a1c4fd"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya Miftakhul Fal'ah, seorang mahasiswa aktif di Universitas Pamulang
+        yang memiliki ketertarikan besar dalam dunia teknologi, khususnya di
+        bidang pengembangan web. Dengan semangat belajar yang tinggi, saya mulai
+        mendalami dunia IT dengan fokus pada web development sebagai langkah
+        awal untuk membangun karier profesional di bidang teknologi informasi.
+      </p>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Project</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <img src="img/leadingpage.PNG" alt="E-Commerce" />
+          <h3>Leading Page E-Commerce</h3>
+          <p>
+            Ini adalah website Leading Page E-Commerce saya yang pertama dibuat
+            dengan html, dan CSS.
+          </p>
+          <a href="project-ecommerce-cloning.vercel.app" target="_blank"
+            >Lihat Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <img src="img/appkontak.PNG" alt="Application contact" />
+          <h3>Application Contact</h3>
+          <p>
+            Project Application contact dibuat menggunakan library JavaScript
+            yaitu ReactJs, dan framework CSS yaitu TailwindCSS.
+          </p>
+          <a
+            href="https://miftah-falah.github.io/Tugas-application-contact/"
+            target="_blank"
+            >Lihat Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Kontak</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <p id="thanksMessage" style="display: none">
+        Terima kasih atas pesan Anda!
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Nama Kamu. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </body>
+</html>
